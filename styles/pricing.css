@@ -26,3 +26,11 @@ h2 {
 blockquote p {
     font-style: italic;
 }
+
+table,
+th,
+td {
+    border: solid #766257;
+    border-collapse: collapse;
+    text-align: center;
+}
