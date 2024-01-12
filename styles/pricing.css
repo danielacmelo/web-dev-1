@@ -34,3 +34,9 @@ td {
     border-collapse: collapse;
     text-align: center;
 }
+
+img {
+    border-color: #766257;
+    border-style: dotted;
+    border-width: .125rem
+}
