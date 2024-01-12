@@ -4,3 +4,25 @@ body {
     line-height: 1.5;
     color: #000000
 }
+
+h1,
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.team {
+    background-color:  #000000;
+    color: #FFBE98;
+}
+
+blockquote p {
+    font-style: italic;
+}
