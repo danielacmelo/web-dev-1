@@ -28,9 +28,12 @@ a:focus{
 	color: #ffffff;
 }
 
-
 a:focus {
 	outline:  1px dotted #003800;
+}
+
+a:active{
+	background-color: #ff0000;
 }
 
 nav li{
