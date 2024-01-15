@@ -1,42 +1,40 @@
 body {
-    background-color: #FFBE98;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    color: #000000
+	background-color: #f1faee;
+	color: #1d3557;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
 }
 
 h1,
 h2 {
-    font-family: Verdana, Geneva, Tahoma;
-}
-
-h1 {
-    font-size: 2rem;
+	font-family: Georgia,Times,"Times New Roman",serif;
+	font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
-.team {
-    background-color: #000000;
-    color: #FFBE98;
-}
-
-blockquote p {
-    font-style: italic;
-}
-
-table,
-th,
+table, 
+th, 
 td {
-    border: solid #766257;
-    border-collapse: collapse;
-    text-align: center;
+	border: 1px solid #e63946;
+	border-collapse: collapse;
+	text-align: center;
 }
 
 img {
-    border-color: #766257;
-    border-style: dotted;
-    border-width: .125rem;
+	border: 2px dashed #e63946;
+}
+
+blockquote p {
+	font-style: italic;
+}
+
+blockquote cite {
+	font-style: normal;
+}
+
+.section-two {
+	background-color: #1d3557;
+	color: #f1faee;
 }
