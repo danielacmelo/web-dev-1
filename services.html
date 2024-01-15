@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>Services</title>
 	<!-- Attach stylesheets here -->
-	<link rel="stylesheet" href="fwd-normalize/styles.css">
-	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/services.css">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 	<main>
 		<h1>Our Services</h1>
 
-		<section>
+		<section .services>
 			<h2>Services Types</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed labore harum culpa ipsum tempore ipsam, porro, modi obcaecati reprehenderit, distinctio alias aut quisquam saepe dignissimosconsectetur.</p>
 
@@ -58,13 +58,13 @@
 				</p>
 			</article>
 
-			<button>Email Us Today!</button>
+			<a href="mailto:info@example.com" class="email-button">Email Us Today!</a>
 
 		</section>
 
-		<section>
+		<section .customers>
 			<h2>Happy Customers</h2>
-			<p>Hear from our happy customers below or on our Facebook page</p>
+			<p>Hear from our happy customers below or on <a class=facebook href="https://www.facebook.com/" target="_blank">our Facebook page.</a></p>
 
 			<article>
 				<img src="images/customer1.jpg" alt="man wearing a red shirt">
