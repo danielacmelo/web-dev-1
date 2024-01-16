@@ -154,13 +154,14 @@ site-header {
 
 	.site-navigation {
 		padding: 0 1rem;
-		/* add flex styles here */
+		/* add flex styles here D*/
+		display: flex;
+		flex-direction: row;
 	}
 
 	.site-navigation ul,
 	.site-navigation.toggled ul {
-		/* add flex styles here */
-
+				/* add flex styles here */
 		/* START - Remove Mobile Menu Styles */
 		position: relative;
 		top: 0;
@@ -211,6 +212,17 @@ site-header {
 }
 
 /* Section: About */
+
+.section-about h2 {
+	text-align: center;
+	margin-top: 2.5rem ;
+}
+
+.section-about p {
+	line-height: 2;
+	width: 80%;
+
+}
 
 
 /* Section: Products */
