@@ -121,7 +121,7 @@ site-header {
 .site-navigation ul {
 	display: none;
 	position: absolute;
-	top: 8rem;
+	top: 4.5rem;
 	left: 0;
 	right: 0;
 	z-index: 2;
@@ -168,7 +168,7 @@ site-header {
 	}
 
 	.site-navigation a {
-		line-height: 8rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
+		line-height: 4.5rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
 		padding: 0 1rem;
 	}
 
