@@ -25,13 +25,14 @@ nav ul{
 
 nav li{
 display: inline-block;
+margin-bottom: .9375rem;
 }
 
 nav a{
     text-decoration: none;
     color: #003800;
     font-weight: bold;
-    padding: .75rem;  
+    padding: .75rem; 
 }       
 
 nav a:visited{
