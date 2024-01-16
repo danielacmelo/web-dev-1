@@ -37,17 +37,22 @@ a:active{
 
 .service {
     background-color: #7FFFD4;
-    padding: 1rem;
+    padding: 0.625rem;
+    margin-top: 1.875rem;
 }
 
+hr{
+    border: 0.0625rem solid #338033;
+}
 
 .email-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.625rem 3.125rem;
+    margin-top: 0.9375rem;
     background-color: #338033;
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    margin-right: 50%;
 }
 
 
@@ -55,7 +60,14 @@ a:active{
     color:#338033
 }
 
+.customer{
+    margin-top: 1.25rem;
+    margin-bottom: 3rem;
+}
+
 
 img{
     border-radius: 50%;
+    margin-right: 50%;
+    margin-bottom: .625rem;
 }
