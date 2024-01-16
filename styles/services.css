@@ -8,6 +8,10 @@ body{
 	color: rgb(40, 40, 40)
 }
 
+h1, h2, h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 header p,
 footer p,
 .services div{
@@ -15,8 +19,7 @@ footer p,
 }
 
 .navbar {
-    width: 100%;
-    margin: auto;
+ 
 }
 
 
@@ -48,25 +51,26 @@ a:active{
     color:#fff;
 }
 
+
 .article-service {
     background-color: #c9ffc9ff;
     padding: .625rem 1.25rem; 
     margin-top: 1.875rem;
 }
 
-h3 .article-service{
-    margin-bottom: 0em;
+.article-service h3 {
+    margin: 0;
+    padding: 0;
 }
 
 hr{
     border: 0.0625rem solid #338033;
-    margin-top: 0em;
-    margin-bottom: 0em;
+    margin: 0;
 }
 
 .email-button {
     display: inline-block;
-    padding: 0.625rem 3.125rem;
+    padding: .9375rem 3.125rem;
     margin-top: 1.5625rem;
     margin-bottom: 1.25rem;
     background-color: #338033;
