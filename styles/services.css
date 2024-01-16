@@ -2,11 +2,23 @@ body{
     max-width: 31.25rem; 
 	margin: 0 auto;
 	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-	font-size: 18px;
+	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
 	color: rgb(40, 40, 40)
 }
+
+header p,
+footer p,
+.services div{
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+}
+
 
 nav li{
 display: inline-block;
@@ -15,6 +27,7 @@ display: inline-block;
 nav a{
     text-decoration: none;
     color: #338033;
+    padding: .75rem;
 }
 
 a:visited{
@@ -35,24 +48,31 @@ a:active{
     color:#fff;
 }
 
-.service {
-    background-color: #7FFFD4;
-    padding: 0.625rem;
+.article-service {
+    background-color: #c9ffc9ff;
+    padding: .625rem 1.25rem; 
     margin-top: 1.875rem;
+}
+
+h3 .article-service{
+    margin-bottom: 0em;
 }
 
 hr{
     border: 0.0625rem solid #338033;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .email-button {
     display: inline-block;
     padding: 0.625rem 3.125rem;
-    margin-top: 0.9375rem;
+    margin-top: 1.5625rem;
+    margin-bottom: 1.25rem;
     background-color: #338033;
     color: #fff;
     text-decoration: none;
-    margin-right: 50%;
+    text-align: center;
 }
 
 
@@ -60,14 +80,22 @@ hr{
     color:#338033
 }
 
-.customer{
+.article-customer{
     margin-top: 1.25rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 
 img{
     border-radius: 50%;
-    margin-right: 50%;
     margin-bottom: .625rem;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    }
+
+
+
+
