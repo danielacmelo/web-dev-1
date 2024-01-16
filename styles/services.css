@@ -14,14 +14,14 @@ h1, h2, h3{
 
 header p,
 footer p,
-.services div{
+.services div,
+.navbar{
     text-align: center;
 }
 
-.navbar {
- 
+nav ul{
+    padding: 0;
 }
-
 
 nav li{
 display: inline-block;
@@ -51,7 +51,6 @@ a:active{
     color:#fff;
 }
 
-
 .article-service {
     background-color: #c9ffc9ff;
     padding: .625rem 1.25rem; 
@@ -79,7 +78,6 @@ hr{
     text-align: center;
 }
 
-
 .facebook{
     color:#338033
 }
@@ -89,7 +87,6 @@ hr{
     margin-bottom: 3rem;
     text-align: center;
 }
-
 
 img{
     border-radius: 50%;
