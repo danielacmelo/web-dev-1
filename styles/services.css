@@ -3,9 +3,9 @@ body{
 	margin: 0 auto;
 	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 1.5;
-	color: rgb(40, 40, 40)
+	color: #000;
 }
 
 h1, h2, h3{
@@ -30,30 +30,31 @@ display: inline-block;
 nav a{
     text-decoration: none;
     color: #003800;
-    padding: .75rem;
+    font-weight: bold;
+    padding: .75rem;  
 }       
 
-a:visited{
+nav a:visited{
     color: #003800;
 }
 
-a:hover,
-a:focus{
+nav a:hover,
+nav a:focus{
     color: #338033;
 }
 
-a:focus {
+nav a:focus {
     outline: 1px dotted #338033
 }
 
-a:active{
+nav a:active{
     background-color: #338033;
     color:#fff;
 }
 
 .article-service {
-    background-color: #c9ffc9ff;
-    padding: .625rem 1.25rem; 
+    background-color: #caffca;
+    padding: .9375rem 1.25rem; 
     margin-top: 1.875rem;
 }
 
