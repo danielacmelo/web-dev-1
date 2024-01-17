@@ -234,8 +234,7 @@ a:focus {
 
 @media (min-width: 43.75em) {
 	.section-about p {
-		margin-left: auto;
-    	margin-right: auto;
+		margin: 0 auto 2.5rem;
     	width: 40em;
 	}
 	
@@ -276,6 +275,17 @@ a:focus {
 	}
 	
 
+	@media (min-width: 43.75em) {
+		.products-wrapper {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		
+
+			
+		}
+		
+	}
 
 /* Footer
 --------------------------------------------- */
