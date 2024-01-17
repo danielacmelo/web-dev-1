@@ -233,6 +233,7 @@ a:focus {
 }
 
 @media (min-width: 43.75em) {
+
 	.section-about p {
 		margin: 0 auto 2.5rem;
     	width: 40em;
@@ -276,15 +277,28 @@ a:focus {
 	
 
 	@media (min-width: 43.75em) {
+
+		.section-products {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.products-sidebar{
+			order: -1;
+			width: 40rem;
+			margin-right: 5rem;
+		}
+
 		.products-wrapper {
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-between;
-		
+			align-content: space-around;
 
-			
 		}
 		
+
+
 	}
 
 /* Footer
