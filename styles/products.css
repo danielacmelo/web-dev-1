@@ -91,7 +91,6 @@ a:focus {
 	/* add flex styles here */
 }
 
-
 .site-header a,
 .site-header a:visited { 
 	color: #282828;
@@ -104,7 +103,6 @@ a:focus {
 	font-weight: bolder;
 	font-size: 2.0rem;
 }
-
 
 .site-navigation {
 	padding: 0 1rem;
@@ -247,7 +245,7 @@ a:focus {
 	
 .product {
 	align-items: center;
-	box-shadow: 1.25rem #f3f3f3;
+	box-shadow: 0px 2px 2px 2px  #f3f3f3;
 }	
 
 .product a {
