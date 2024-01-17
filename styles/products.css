@@ -102,7 +102,7 @@ a:focus {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	margin: .5em 0.5em;
 	font-weight: bolder;
-	font-size: 2.5rem;
+	font-size: 2.0rem;
 }
 
 
@@ -229,10 +229,9 @@ a:focus {
 
 .section-about p {
 	line-height: 2;
-	width: 80%;
+	width: 95%;
 
 }
-
 
 /* Section: Products */
 
@@ -246,6 +245,10 @@ a:focus {
 	border: 2px groove #f3f3f3;
 }	
 
+.product-text {
+	margin: 0 0 1.25rem 1.25rem;
+}
+
 .product a {
 	display: block;
 	width: 10rem;
@@ -256,10 +259,6 @@ a:focus {
 	font-size: 1rem;
 	text-decoration: none;
 	} 
-
-.product {
-	border: 1px solid gray;
-}
 
 
 /* Footer
