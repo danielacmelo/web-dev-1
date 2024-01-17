@@ -267,3 +267,15 @@ a:focus {
 
 /* Footer
 --------------------------------------------- */
+
+.site-footer {
+	background-color: #eeeeee;
+	text-align: left;
+	padding: 1rem;
+}
+
+.site-footer ul {
+	list-style: none;
+	padding: 0;
+}
+
