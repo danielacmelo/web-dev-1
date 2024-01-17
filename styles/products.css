@@ -161,8 +161,8 @@ a:focus {
 
 	.site-navigation {
 		padding: 0 1rem;
-		/* add flex styles here D*/
-		display: flex;
+		/* add flex styles here */
+		display: flex; 
 		flex-direction: row;
 	}
 
@@ -170,6 +170,8 @@ a:focus {
 	.site-navigation.toggled ul {
 				/* add flex styles here */
 		/* START - Remove Mobile Menu Styles */
+		justify-content: space-between;
+		align-items: center;
 		position: relative;
 		top: 0;
 		/* END - Remove Mobile Menu Styles  */
@@ -236,7 +238,7 @@ a:focus {
 .products-wrapper {
 	display: flex;
 	flex-direction: column;
-	row-gap: 1.25rem;
+	row-gap: 2rem;
 	}
 
 .product h2{
@@ -246,6 +248,7 @@ a:focus {
 .product {
 	align-items: center;
 	box-shadow: 0px 2px 2px 2px  #f3f3f3;
+	width: 18.75rem;
 }	
 
 .product a {
@@ -279,3 +282,12 @@ a:focus {
 	padding: 0;
 }
 
+@media (min-width: 43.75em) {
+
+	.site-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+}
