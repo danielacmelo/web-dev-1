@@ -230,8 +230,16 @@ a:focus {
 .section-about p {
 	line-height: 2;
 	width: 95%;
-
 }
+
+@media (min-width: 43.75em) {
+	.section-about p {
+		margin: 1.25rem 10rem 3rem;
+		width: 60%;
+	}
+	
+}
+
 
 /* Section: Products */
 
