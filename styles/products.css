@@ -83,19 +83,28 @@ a:focus {
 
 /* Header
 --------------------------------------------- */
-site-header {
+.site-header {
 	background-color: #ffe6bf;
+	display: flex;
+	justify-content: space-between;
+	align-items: last baseline;
 	/* add flex styles here */
 }
 
-.site-logo {
-	max-width: 6rem;
-	margin: 1rem;
+
+.site-header a,
+.site-header a:visited { 
+	color: #282828;
+	text-decoration: none;		
 }
 
-.site-logo img {
-	display: block;
+.site-name {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	margin: .5em 0.5em;
+	font-weight: bolder;
+	font-size: 2.5rem;
 }
+
 
 .site-navigation {
 	padding: 0 1rem;
@@ -227,6 +236,30 @@ site-header {
 
 /* Section: Products */
 
+.products-wrapper {
+	display: flex;
+	flex-direction: column;
+	}
+
+.product {
+	align-items: center;
+	border: 2px groove #f3f3f3;
+}	
+
+.product a {
+	display: block;
+	width: 10rem;
+	padding: .75rem;
+	background-color: #008000;
+	color: #ffffff;
+	text-align: center;
+	font-size: 1rem;
+	text-decoration: none;
+	} 
+
+.product {
+	border: 1px solid gray;
+}
 
 
 /* Footer
