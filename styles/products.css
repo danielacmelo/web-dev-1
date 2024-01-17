@@ -234,8 +234,9 @@ a:focus {
 
 @media (min-width: 43.75em) {
 	.section-about p {
-		margin: 1.25rem 10rem 3rem;
-		width: 60%;
+		margin-left: auto;
+    	margin-right: auto;
+    	width: 40em;
 	}
 	
 }
