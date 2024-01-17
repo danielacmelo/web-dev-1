@@ -84,10 +84,10 @@ a:focus {
 /* Header
 --------------------------------------------- */
 .site-header {
-	background-color: #ffe6bf;
+	background-color: #ffffff;
 	display: flex;
 	justify-content: space-between;
-	align-items: last baseline;
+	align-items: center;
 	/* add flex styles here */
 }
 
@@ -238,16 +238,17 @@ a:focus {
 .products-wrapper {
 	display: flex;
 	flex-direction: column;
+	row-gap: 1.25rem;
 	}
 
+.product h2{
+	margin: 0.5em 0 0 0; 
+}
+	
 .product {
 	align-items: center;
-	border: 2px groove #f3f3f3;
+	box-shadow: 1.25rem #f3f3f3;
 }	
-
-.product-text {
-	margin: 0 0 1.25rem 1.25rem;
-}
 
 .product a {
 	display: block;
@@ -259,6 +260,11 @@ a:focus {
 	font-size: 1rem;
 	text-decoration: none;
 	} 
+
+	.product-text {
+		margin: 0 0 1.25rem 1.25rem;
+	}
+	
 
 
 /* Footer
