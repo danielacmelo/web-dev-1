@@ -109,6 +109,7 @@ a:focus {
 }
 
 .site-navigation ul {
+	font-family: Georgia, Times, "Times New Roman", serif;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -120,8 +121,7 @@ a:focus {
 	padding: 1rem;
 	font-size: 1.25rem;
 	text-decoration: none;
-	text-transform: uppercase;
-}
+	}
 
 /* START -- STYLES FOR MOBILE MENU */
 /* we will cover this more later */
@@ -132,7 +132,7 @@ a:focus {
 	left: 0;
 	right: 0;
 	z-index: 2;
-	background-color: #ffe6bf;
+	background-color: #ffffff;
 }
 
 .menu-toggle {
@@ -162,16 +162,16 @@ a:focus {
 	.site-navigation {
 		padding: 0 1rem;
 		/* add flex styles here */
-		display: flex; 
-		flex-direction: row;
+		
+	
 	}
 
 	.site-navigation ul,
 	.site-navigation.toggled ul {
 				/* add flex styles here */
 		/* START - Remove Mobile Menu Styles */
-		justify-content: space-between;
-		align-items: center;
+		display:flex;
+		justify-content: flex-end;
 		position: relative;
 		top: 0;
 		/* END - Remove Mobile Menu Styles  */
