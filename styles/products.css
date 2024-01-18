@@ -76,7 +76,6 @@ a:focus {
 # Components
 --------------------------------------------------------------*/
 .site-wrapper {
-	/* This is for very large screens */
 	max-width: 120rem;
 	margin: 0 auto;
 }
@@ -88,7 +87,6 @@ a:focus {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* add flex styles here */
 }
 
 .site-header a,
@@ -161,13 +159,11 @@ a:focus {
 	}
 
 	.site-navigation {
-		padding: 0 1rem;
-		/* add flex styles here */
+		padding: 0 1rem;		
 	}
 
 	.site-navigation ul,
-	.site-navigation.toggled ul {
-				/* add flex styles here */
+	.site-navigation.toggled ul {				
 		/* START - Remove Mobile Menu Styles */
 		display:flex;
 		justify-content: flex-end;
@@ -177,7 +173,7 @@ a:focus {
 	}
 
 	.site-navigation a {
-		line-height: 4.5rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
+		line-height: 4.5rem; 
 		padding: 0 .6rem;
 	}
 
