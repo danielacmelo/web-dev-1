@@ -152,7 +152,6 @@ a:focus {
 }
 /* END -- STYLES FOR MOBILE MENU */
 
-
 @media (min-width: 43.75em) {
 
 	.menu-toggle {
@@ -181,7 +180,6 @@ a:focus {
 	}
 
 }
-
 
 /* Main
 --------------------------------------------- */
@@ -239,7 +237,6 @@ a:focus {
 	
 }
 
-
 /* Section: Products */
 
 .products-wrapper {
@@ -273,7 +270,6 @@ a:focus {
 		margin: 0 0 1.25rem 1.25rem;
 	}
 	
-
 	@media (min-width: 43.75em) {
 
 		.section-products {
@@ -300,7 +296,6 @@ a:focus {
 		}	
 
 	}
-
 	
 	@media (min-width: 62rem) {
 
@@ -310,7 +305,6 @@ a:focus {
 		}
 		
 	}*/
-
 
 /* Footer
 --------------------------------------------- */
