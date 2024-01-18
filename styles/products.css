@@ -121,10 +121,11 @@ a:focus {
 	padding: 1rem;
 	font-size: 1.25rem;
 	text-decoration: none;
-	}
+}
 
 /* START -- STYLES FOR MOBILE MENU */
 /* we will cover this more later */
+
 .site-navigation ul {
 	display: none;
 	position: absolute;
@@ -150,6 +151,7 @@ a:focus {
 .site-navigation.toggled ul {
 	display: block;
 }
+
 /* END -- STYLES FOR MOBILE MENU */
 
 @media (min-width: 43.75em) {
@@ -243,7 +245,7 @@ a:focus {
 	display: flex;
 	flex-direction: column;
 	row-gap: 2rem;
-	}
+}
 
 .product h2{
 	margin: 0.5em 0 0 0; 
@@ -264,47 +266,47 @@ a:focus {
 	text-align: center;
 	font-size: 1rem;
 	text-decoration: none;
-	} 
+} 
 
-	.product-text {
-		margin: 0 0 1.25rem 1.25rem;
-	}
+.product-text {
+	margin: 0 0 1.25rem 1rem;
+}
 	
-	@media (min-width: 43.75em) {
+@media (min-width: 43.75em) {
 
-		.section-products {
-			display: flex;
-			justify-content: space-around;
-		}
-
-		.products-sidebar{
-			order: -1;
-			width: 40rem;
-			margin-right: 5rem;
-		}
-
-		.products-wrapper {
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-content: space-around;
-			gap: 25px;
-		}
-		
-		.product a {
-			margin-bottom: 4.375rem;
-		}	
-
+	.section-products {
+		display: flex;
+		justify-content: space-around;
 	}
-	
-	@media (min-width: 62rem) {
 
-		.products-sidebar{
-			width: 20rem;
-			margin-right: 3rem;
-		}
+	.products-sidebar{
+		order: -1;
+		width: 40rem;
+		margin-right: 5rem;
+	}
+
+	.products-wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: space-around;
+		gap: 25px;
+	}
 		
-	}*/
+	.product a {
+		margin-bottom: 4.375rem;
+	}	
+
+}
+	
+@media (min-width: 62rem) {
+
+	.products-sidebar{
+		width: 20rem;
+		margin-right: 3rem;
+	}
+		
+}
 
 /* Footer
 --------------------------------------------- */
@@ -313,6 +315,7 @@ a:focus {
 	background-color: #eeeeee;
 	text-align: left;
 	padding: 1rem;
+	margin-top: 1.25rem;
 }
 
 .site-footer ul {
@@ -326,6 +329,5 @@ a:focus {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
 	}
 }
