@@ -179,7 +179,7 @@ a:focus {
 
 	.site-navigation a {
 		line-height: 4.5rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
-		padding: 0 1rem;
+		padding: 0 .6rem;
 	}
 
 }
