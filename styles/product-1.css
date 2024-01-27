@@ -250,30 +250,34 @@ a.cart-link {
 
 	.lemon-photo-1 {
 		position: absolute;
-		top: 10rem;
-		z-index: 1;
+		top: 4rem;
+		left: 5rem;
+		z-index: 3;
 	}
 
 	.lemon-photo-2 {
 		position: absolute;
-		top: 6rem;
-		z-index: 2;
+		top: 10rem;
+		left: 15rem;
+		z-index: 4;
 	}
 
 	.lemon-photo-3 {
 		position: absolute;
-		top: 2rem ;
-		z-index: 3;
+		top: 12rem ;
+		left: 22rem;
+		z-index: 2;
 	}
 
 	.lemon-photo-4 {
 		position: absolute;
-		top: 7rem;
-		z-index: 4;
+		top: 2rem;
+		left: 24rem;
+		z-index: 1;
 	}
 
 	.collage img:hover {
-		z-index: 10;
+		z-index: 100;
 	}
 }
 
