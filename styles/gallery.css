@@ -9,7 +9,7 @@
 	- Typography
 	- Elements
 	- Links
-# Layouts
+# Layout
 # Components
 	- Header
 	- Main
@@ -28,7 +28,7 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #282828;
-	background-color: #808080;
+	background-color: #ffffff;
 }
 
 h1,
@@ -43,6 +43,7 @@ h6 {
 
 h1 {
 	font-size: 2.5rem;
+	margin: 0 0 .5em;
 }
 
 h2 {
@@ -63,88 +64,56 @@ ol {
 }
 
 figure {
-	margin: 2rem auto;
-	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
-figcaption {
-	font-size: .875rem;
-}
-
-blockquote {
-	background-color: #8d1d1d;
-	color: #ffffff;
-	text-align: center;
-	padding: 2rem;
-	border: .25rem double #ffffff;
-	border-radius: 1rem;
-}
-
-blockquote p {
-	font-family: Georgia, Times, "Times New Roman", serif;
-	font-size: 1.5rem;
-	margin: 0 0 .5em;
-}
-
-blockquote cite {
-	font-style: italic;
-}
-
-time {
-	display: block;
-	margin-bottom: 1rem;
-}
 
 /* Links
 --------------------------------------------- */
 a,
 a:visited { 
-	color: #347034;
+	color: #f62424;
 }
 
 a:hover,
 a:focus {
-	color: #234723;
+	color: #f62424;
 }
 
 a:focus {
-	outline: 1px dotted #234723;
+	outline: 1px dotted #f62424;
 }
 
 a:active {
 	color: #ffffff;
-	background-color: #234723;
+	background-color: #f62424;
 }
 
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-.site-wrapper {
-	max-width: 75rem;
-	margin: 0 auto;
-	background-color: #fff;
-}
-
-@media (min-width: 50em) {
+@media screen and (min-width: 68em) {
 
 	.site-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		
 	}
 
-	.site-header,
-	.site-footer {
-		width: 100%;
+	.site-header {
+		
 	}
 
 	.site-main {
-		width: 75%;
+		
 	}
 
 	.site-sidebar {
-		width: 25%;
+		
+	}
+
+	.site-footer {
+		
 	}
 
 }
@@ -156,23 +125,20 @@ a:active {
 /* Header
 --------------------------------------------- */
 .site-header {
-	background-color: #ffe6bf;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	background-color: #fffacd;
 }
 
-.site-logo {
-	max-width: 6rem;
-	margin: 1rem;
-}
-
-.site-logo img {
-	display: block;
+a.site-name {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 1.75rem;
+	color: #282828;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1rem;
 }
 
 .site-navigation {
-	padding: 0 1rem;
+	position: relative;
 }
 
 .site-navigation ul {
@@ -180,25 +146,26 @@ a:active {
 	padding: 0;
 	margin: 0;
 	text-align: center;
+	background-color: #fffacd;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.site-navigation.toggled ul {
+	display: block;
 }
 
 .site-navigation a {
 	display: block;
 	padding: 1rem;
+	font-family: Georgia, Times, "Times New Roman", serif;
 	font-size: 1.25rem;
 	text-decoration: none;
-	text-transform: uppercase;
-}
-
-/* START -- STYLES FOR MOBILE MENU */
-/* we will cover this more later */
-.site-navigation ul {
-	display: none;
-	position: absolute;
-	top: 8rem;
-	left: 0;
-	right: 0;
-	background-color: #ffe6bf;
+	color: #282828;
 }
 
 .menu-toggle {
@@ -206,6 +173,10 @@ a:active {
 	background-color: transparent;
 	border: 0;
 	padding: 1rem;
+	position: absolute;
+	top: -4.5rem;
+	right: 1rem;
+	z-index: 2;
 }
 
 .menu-toggle:focus {
@@ -213,35 +184,33 @@ a:active {
 	outline: 1px dotted;
 }
 
-.site-navigation.toggled ul {
-	display: block;
-}
-/* END -- STYLES FOR MOBILE MENU */
-
-
-@media (min-width: 43.75em) {
+@media screen and (min-width: 68em) {
 
 	.menu-toggle {
 		display: none;
 	}
 
+	.site-header {
+		
+	}
+
+	.site-name {
+		
+	}
+
 	.site-navigation {
-		flex: 1 1 auto;
-		padding: 0 1rem;
+		padding-right: 1rem;
 	}
 
 	.site-navigation ul,
 	.site-navigation.toggled ul {
 		display: flex;
 		justify-content: flex-end;
-		/* START - Remove Mobile Menu Styles */
 		position: relative;
-		top: 0;
-		/* END - Remove Mobile Menu Styles  */
 	}
 
 	.site-navigation a {
-		line-height: 8rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
+		line-height: 4.5rem;
 		padding: 0 1rem;
 	}
 
@@ -251,57 +220,53 @@ a:active {
 /* Main
 --------------------------------------------- */
 .site-main {
-	padding: .25rem 2rem;
-	background-color: #d6f5ff;
+	padding: 0 5rem;
 }
 
-article {
-	border-bottom: 1px solid #888888;
-	margin-bottom: 1.5rem;
-}
+@media (min-width: 68em) {
 
-article footer {
-	margin: 1rem 0 0;
-}
+	.photo-gallery {
 
-.alignleft {
-	float: left;
-	margin: 0 1rem 1rem 0;
-}
+	}
 
-.alignright {
-	float: right;
-	margin: 0 0 1rem 1rem;
-}
+	.photo-gallery img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
 
-article::after {
-	content: '';
-	display: block;
-	clear: both;
-}
+	.large-image {
 
-.external-link::after {
-	content: url(../images/icon-external-link.png);
-	margin-left: .25rem;
-	vertical-align: middle;
-}
+	}
 
-/* Sidebar
---------------------------------------------- */
-.site-sidebar {
-	padding: 2rem;
-	background-color: #feeaed;
+	.large-image img {
+
+	}
+
+	.info-box {
+		background-color: #444444;
+		color: #ffffff;
+		padding: 1rem 2rem;
+	}
+
 }
 
 
 /* Footer
 --------------------------------------------- */
 .site-footer {
-	background-color: #d4ffc9;
+	border-top: 1px solid #888888;
 	text-align: center;
 	padding: 2rem;
+	margin-bottom: 3.5rem;
 }
 
 .site-footer p {
 	margin: 0;
+}
+
+@media (min-width: 68em) {
+	.site-footer {
+		margin-bottom: 0;
+	}
 }
