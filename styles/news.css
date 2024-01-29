@@ -258,13 +258,6 @@ a:active {
 article {
 	border-bottom: 1px solid #888888;
 	margin-bottom: 1.5rem;
-	/* clear: both; */ /*Unnecessary because wiht use ClearfixHack */
-}
-
-article::after {
-	content: '';
-	display: block;
-	clear: both;
 }
 
 article footer {
@@ -281,9 +274,15 @@ article footer {
 	margin: 0 0 1rem 1rem;
 }
 
+article::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .external-link::after {
 	content: url(../images/icon-external-link.png);
-	margin-left: 0.25rem;
+	margin-left: .25rem;
 	vertical-align: middle;
 }
 
