@@ -226,6 +226,29 @@ a.site-name {
 @media (min-width: 68em) {
 
 	.photo-gallery {
+		/* Create a grid, make all children grid items */
+		display: grid;
+		/* Create 3 columns */
+		/* grid-template-columns: 18.75rem 18.75rem 18.75rem; */
+		/* grid-template-columns: repeat(2, 18.75rem) 1fr; */
+		 /* distorce  */
+		/* grid-template-columns: repeat(3, 18.75rem); */
+		/* Create 3 columns, first 2 are 300px, last 1 is min 300px, max remaining space in the grid */
+		grid-template-columns: repeat(2, 18.75rem) minmax(18.75rem, 1fr);
+
+		
+
+		/* Create 3 columns of equal width to fit the container */
+		/* grid-template-columns: 1fr 1fr 1fr; */
+
+		/* Create 2 rows, 200 px height each */
+		/* grit-template-rows: 12.5rem 12.5rem */
+
+		/* Create 2 rows, set height based on the content inside the gird item */
+		grid-template-rows: auto auto ;
+
+
+
 
 	}
 
