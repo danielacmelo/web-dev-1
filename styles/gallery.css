@@ -97,23 +97,56 @@ a:active {
 @media screen and (min-width: 68em) {
 
 	.site-wrapper {
+		display: grid;
+		grid-template-columns: 1fr minmax(auto, 53rem) minmax(auto, 22rem) 1fr;
+		grid-template-areas: 
+			"header header header header"
+			". main sidebar ."
+			"footer footer footer footer"
+		;
 		
 	}
 
+	.site-wrapper.site-sidebar-left {
+		grid-template-columns: 1fr minmax(auto, 53rem) minmax(auto, 22rem) 1fr;
+		grid-template-areas: 
+			"header header header header"
+			". sidebar main ."
+			"footer footer footer footer"
+		;
+
+	}
+
+	.site-wrapper.site-sidebar-bottom {
+		grid-template-columns: 1fr minmax(auto, 62.5rem) 1fr;
+		grid-template-areas: 
+			"header header header header"
+			". main ."
+			". sidebar ."
+			"footer footer footer footer"
+
+		;
+	}
+
+
+
 	.site-header {
+		grid-area: header;
 		
 	}
 
 	.site-main {
+		grid-area: main;
 		
 	}
 
 	.site-sidebar {
-		
+		grid-area: sidebar;	
+	
 	}
 
 	.site-footer {
-		
+		grid-area: footer;	
 	}
 
 }
@@ -191,6 +224,8 @@ a.site-name {
 	}
 
 	.site-header {
+		font-display: grid;
+		grid-template-columns: 1fr minmax( (auto,22rem) minmax(auto,53rem) ) ;
 		
 	}
 
@@ -219,9 +254,9 @@ a.site-name {
 
 /* Main
 --------------------------------------------- */
-.site-main {
+/* .site-main {
 	padding: 0 5rem;
-}
+} */
 
 @media (min-width: 68em) {
 
@@ -234,10 +269,9 @@ a.site-name {
 		 /* distorce  */
 		/* grid-template-columns: repeat(3, 18.75rem); */
 		/* Create 3 columns, first 2 are 300px, last 1 is min 300px, max remaining space in the grid */
-		grid-template-columns: repeat(2, 18.75rem) minmax(18.75rem, 1fr);
+		/* grid-template-columns: repeat(2, 18.75rem) minmax(18.75rem, 1fr); */
 
 		
-
 		/* Create 3 columns of equal width to fit the container */
 		/* grid-template-columns: 1fr 1fr 1fr; */
 
@@ -245,10 +279,19 @@ a.site-name {
 		/* grit-template-rows: 12.5rem 12.5rem */
 
 		/* Create 2 rows, set height based on the content inside the gird item */
-		grid-template-rows: auto auto ;
+		/* grid-template-rows: auto auto ; */
 
+		/* create 4 columns, 200px wide each */
+		grid-template-columns: repeat(4, 12.5rem);
 
-
+		/* make all automatically generated rows 200px in height   */
+		grid-auto-rows: 12.5rem;
+		gap: 1rem;
+		justify-content: center;
+		/* align-items: center; */
+		/* align-items: start; */
+		/* align-items: end; */
+		align-items: stretch;
 
 	}
 
@@ -256,13 +299,18 @@ a.site-name {
 		display: block;
 		width: 100%;
 		height: 100%;
+		object-fit: cover;
 	}
 
 	.large-image {
+		/* grid-column: 2 /3; */
+		/* grid-column: 2/4; */
+		grid-column: span 2;
 
 	}
 
 	.large-image img {
+		object-position: left bottom;
 
 	}
 
@@ -270,6 +318,9 @@ a.site-name {
 		background-color: #444444;
 		color: #ffffff;
 		padding: 1rem 2rem;
+		grid-row: span 2;
+		grid-column: span 2;
+		order:-1;
 	}
 
 }
