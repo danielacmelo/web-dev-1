@@ -42,7 +42,7 @@ h6 {
 }
 
 h1 {
-	font-size: 3.5rem;
+	font-size: 3.0rem;
 	margin: 0 0 .5em;
 }
 
@@ -189,12 +189,12 @@ a.site-name {
 /* Section 1 - Banner */
 .banner {
 	position: relative;
-	height: 30rem;
+	height: 35rem;
 }
 
 .banner h1 {
 	position: absolute;
-	top: 15rem;
+	top: 20rem;
 	left: 0;
 	right: 0;
 	z-index: 1;
@@ -209,7 +209,7 @@ a.site-name {
 
 .banner img {
 	width: 100%;
-	height: 30rem;
+	height: 35rem;
 	object-fit: cover;
 	object-position: bottom;
 
