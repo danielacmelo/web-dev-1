@@ -236,13 +236,11 @@ a.site-name {
 	}  
 
 	.grid-center.cards > article {
-		
 		background-color: #ffffff;
 	}
 
 	.grid-center.cards > article p {
 		padding: 0 2rem;
-
 	}
 
 
@@ -281,8 +279,7 @@ a.site-name {
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 		background-color: #ffffff;
 		gap: .625rem;
-		margin-bottom: .625rem;
-		
+		margin-bottom: .625rem;	
 	}
 
 	.grid-map div {
@@ -335,5 +332,3 @@ a.site-name {
 		margin-bottom: 0;
 	}
 }
-
-
