@@ -114,7 +114,12 @@ a.site-name {
 }
 
 .site-navigation {
-	
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .site-navigation ul {
@@ -139,22 +144,30 @@ a.site-name {
 @media (min-width: 50em) {
 
 	.site-header {
-		
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 3;
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 	}
 
 	.site-navigation {
+		position: relative;
 		padding: 0 1rem;
 		flex: 1 1 auto;
-
+		box-shadow: none;
 	}
 
 	.site-navigation ul {
-		
+		position: relative;
+		top: 0;
+		justify-content: flex-end;
 	}
 
 	.site-navigation a {
 		font-size: 1.25rem;
-		line-height: 4.5rem;
+		line-height: 4.5rem; /* Matches the height of the .site-header */
 		padding: 0 1rem;
 	}
 
@@ -177,15 +190,23 @@ a.site-name {
 @media (min-width: 50em) {
 
 	.site-main {
-		
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 6rem auto 0;
+		position: relative;
 	}
 
 	.col-right {
-
+		width: 25%;
+		order: 2;
+		position: sticky;
+		top: 6rem;
+		align-self: flex-start;
 	}
 	
 	.col-left {
-
+		width: 75%;
 	}
 
 }
@@ -224,33 +245,50 @@ a.cart-link {
 @media (min-width: 31.25em) {
 
 	.float-left {
-		
+		float: left;
+		margin: .25rem 1rem .25rem 0;
 	}
 
 }
 
-@media (min-width: 50em) {
+@media (min-width: 75em) {
 
 	.collage {
+		position: relative;
 		width: 100%;
 		height: 38rem;
-		
+	}
+
+	.collage img:hover {
+		z-index: 1000;
 	}
 
 	.lemon-photo-1 {
-		
+		position: absolute;
+		top: 3rem;
+		left: 4rem;
+		z-index: 2;
 	}
 
 	.lemon-photo-2 {
-		
+		position: absolute;
+		bottom: 2rem;
+		left: 14rem;
+		z-index: 4;
 	}
 
 	.lemon-photo-3 {
-		
+		position: absolute;
+		bottom: 6rem;
+		right: 7rem;
+		z-index: 3;
 	}
 
 	.lemon-photo-4 {
-		
+		position: absolute;
+		top: 1rem;
+		right: 6rem;
+		z-index: 1;
 	}
 
 }
